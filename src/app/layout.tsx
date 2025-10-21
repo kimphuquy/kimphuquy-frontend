@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Kim Phú Quý - Bạc Kim Phú Quý Đồng Nai | Kim Phú Quý",
   description:
-    "Cửa hàng Kim Phú Quý Đồng Nai chính thức. Chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng, bạc trang sức, mỹ nghệ. Hotline: 0973.067.036 - 0879.189.363. Địa chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai.",
+    "Cửa hàng Kim Phú Quý Đồng Nai chính thức. Chuyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ. Hotline: 0973.067.036 - 0879.189.363. Địa chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai.",
   keywords: [
     "bạc kim phú quý đồng nai",
     "kim phú quý đồng nai", 
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Công Ty TNHH Kim Phú Quý",
     title: "Kim Phú Quý - Bạc Kim Phú Quý Đồng Nai",
     description:
-      "Cửa hàng Kim Phú Quý Đồng Nai chính thức, chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng, bạc trang sức, mỹ nghệ. Hotline: 0973.067.036 - 0879.189.363 | Địa chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai",
+      "Cửa hàng Kim Phú Quý Đồng Nai chính thức, huyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ. Hotline: 0973.067.036 - 0879.189.363 | Địa chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai",
     images: [
       {
         url: "/cover fanpage nls phu quy 2.png",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Kim Phú Quý - Bạc Kim Phú Quý Đồng Nai",
-    description: "Cửa hàng Kim Phú Quý Đồng Nai chính thức, chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng, bạc trang sức, mỹ nghệ. Hotline: 0973.067.036 - 0879.189.363 | Địa chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai",
+    description: "Cửa hàng Kim Phú Quý Đồng Nai chính thức, huyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ. Hotline: 0973.067.036 - 0879.189.363 | Địa chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai",
     images: [
       "/cover fanpage nls phu quy 2.png",
     ],

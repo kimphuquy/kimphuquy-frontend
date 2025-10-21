@@ -27,10 +27,10 @@ export function HeroSection() {
             Bạc Thỏi - Bạc Miếng - Bạc Mỹ Nghệ
           </h2>
           <p className="text-lg sm:text-lg md:text-xl lg:text-2xl text-white mb-6 sm:mb-8 animate-fade-in delay-300 max-w-3xl mx-auto">
-            Chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng tại Đồng Nai
+            Chuyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ tại Đồng Nai
           </p>
           <p className="text-base sm:text-lg md:text-xl text-kpq-gold mb-8 sm:mb-12 animate-fade-in delay-500 max-w-2xl mx-auto">
-            Uy tín chất lượng - Bạc miếng, bạc thỏi chất lượng 999, đầu tư bạc tích trữ an toàn
+            Uy tín chất lượng - Bạc miếng, bạc thỏi, bạc mỹ nghệ chất lượng 999, đầu tư bạc tích trữ an toàn
           </p>
 
           {/* Buttons */}

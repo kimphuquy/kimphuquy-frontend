@@ -23,7 +23,7 @@ export function usePriceUpdater() {
   })
 
   const hasInitializedRef = useRef(false)
-  const timeoutRef = useRef<NodeJS.Timeout>()
+  const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined)
 
   // Initialize state with last update time
   useEffect(() => {

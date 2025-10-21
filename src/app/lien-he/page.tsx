@@ -25,11 +25,11 @@ import { CommonFooter } from "@/components/common/common-footer"
 const contactInfo = {
   address: "98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai",
   phone: "0973.067.036 - 0879.189.363",
-  email: "kimphuquy@gmail.com",
+  // email: "kimphuquy@gmail.com", // Tạm ẩn vì chưa có
   hours: "8:00 - 18:30 (Thứ 2 - Thứ 7), 8:00 - 17:00 (Chủ Nhật)",
   timezone: "Giờ Việt Nam (GMT+7)",
   zalo: "https://zalo.me/kimphuquy",
-  facebook: "https://facebook.com/kimphuquy",
+  facebook: "https://www.facebook.com/bacphuquydongnai",
   website: "https://kimphuquy.com",
 }
 
@@ -214,8 +214,8 @@ export default function LienHePage() {
                   </div>
                 </div>
 
-                {/* Email */}
-                <div className="flex items-start space-x-2 sm:space-x-3">
+                {/* Email - Tạm ẩn vì chưa có */}
+                {/* <div className="flex items-start space-x-2 sm:space-x-3">
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-slate-600 dark:text-slate-400 mt-0.5 flex-shrink-0" />
                   <div className="min-w-0 flex-1">
                     <p className="font-medium text-slate-800 dark:text-slate-200 mb-1 text-sm sm:text-base">Email</p>
@@ -226,7 +226,7 @@ export default function LienHePage() {
                       {contactInfo.email}
                     </a>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Business Hours */}
                 <div className="flex items-start space-x-2 sm:space-x-3">
@@ -295,10 +295,10 @@ export default function LienHePage() {
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="font-medium text-blue-800 dark:text-blue-200 text-sm sm:text-base">
-                        Kim Phú Quý
+                        Kim Phú Quý - Đại Lý Bạc Vàng Phú Quý Đồng Nai
                       </p>
                       <p className="text-xs sm:text-sm text-blue-600 dark:text-blue-400 truncate">
-                        Theo dõi tin tức mới nhất
+                        Fanpage chính - Theo dõi tin tức mới nhất
                       </p>
                     </div>
                   </div>
@@ -328,7 +328,7 @@ export default function LienHePage() {
               </CardHeader>
               <CardContent className="space-y-2 sm:space-y-3 pt-0">
                 <div className="grid grid-cols-1 gap-2 sm:gap-3">
-                  {/* Main Official Fanpage */}
+                  {/* Main Official Fanpage - Phú Quý */}
                   <div className="flex items-center justify-between p-2 sm:p-3 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg border-2 border-blue-300 dark:border-blue-600 relative">
                     <div className="flex items-center space-x-2 sm:space-x-3 min-w-0 flex-1">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 relative">
@@ -340,7 +340,7 @@ export default function LienHePage() {
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center space-x-2">
                           <p className="font-bold text-blue-800 dark:text-blue-200 text-xs sm:text-sm break-words">
-                            Kim Phú Quý
+                            Kim Phú Quý - Đại Lý Bạc Vàng Phú Quý Đồng Nai
                           </p>
                           <span className="bg-yellow-500 text-white text-xs px-2 py-0.5 rounded-full font-medium whitespace-nowrap">
                             CHÍNH
@@ -350,7 +350,7 @@ export default function LienHePage() {
                       </div>
                     </div>
                     <a
-                      href="https://www.facebook.com/kimphuquy"
+                      href="https://www.facebook.com/bacphuquydongnai"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:underline flex-shrink-0 ml-2"
@@ -360,6 +360,7 @@ export default function LienHePage() {
                     </a>
                   </div>
 
+                  {/* Secondary Official Fanpage - Ancarat */}
                   <div className="flex items-center justify-between p-2 sm:p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <div className="flex items-center space-x-2 sm:space-x-3 min-w-0 flex-1">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -367,34 +368,13 @@ export default function LienHePage() {
                       </div>
                       <div className="min-w-0 flex-1">
                         <p className="font-medium text-blue-800 dark:text-blue-200 text-xs sm:text-sm break-words">
-                          Kim Phú Quý - Cửa Hàng Bạc Đồng Nai
+                          Kim Phú Quý - Đại Lý Bạc Ancarat Đồng Nai
                         </p>
+                        <p className="text-xs text-blue-600 dark:text-blue-400">Fanpage phụ - Sản phẩm Ancarat</p>
                       </div>
                     </div>
                     <a
-                      href="https://www.facebook.com/kimphuquy"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:underline flex-shrink-0 ml-2"
-                    >
-                      <span className="text-xs sm:text-sm font-medium">Theo dõi</span>
-                      <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
-                    </a>
-                  </div>
-
-                  <div className="flex items-center justify-between p-2 sm:p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                    <div className="flex items-center space-x-2 sm:space-x-3 min-w-0 flex-1">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <p className="font-medium text-blue-800 dark:text-blue-200 text-xs sm:text-sm break-words">
-                          Kim Phú Quý - Cửa Hàng Bạc Đồng Nai
-                        </p>
-                      </div>
-                    </div>
-                    <a
-                      href="https://www.facebook.com/kimphuquy"
+                      href="https://www.facebook.com/bacancaratdongnai"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:underline flex-shrink-0 ml-2"

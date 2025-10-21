@@ -42,9 +42,9 @@ export function PurchaseInfo() {
               <p>
                 <strong>Zalo:</strong> 0763 600 889
               </p>
-              <p>
+              {/* <p>
                 <strong>Email:</strong> kimphuquy@gmail.com
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

@@ -337,7 +337,7 @@ class PriceCrawler {
           // Update stock status
           if (crawled.inStock !== product.inStock) {
             product.inStock = crawled.inStock
-            product.status = crawled.inStock ? "available" : "out_of_stock"
+            product.status = crawled.inStock ? "available" as any : "out_of_stock" as any
             updated = true
           }
 

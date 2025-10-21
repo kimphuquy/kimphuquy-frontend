@@ -334,7 +334,7 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Công Ty TNHH Kim Phú Quý",
-    description: "Cửa hàng Kim Phú Quý Đồng Nai chính thức, chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng tại Đồng Nai, đầu tư bạc tích trữ uy tín, an toàn. Hotline: 0973.067.036 - 0879.189.363 | Địa Chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai",
+    description: "Cửa hàng Kim Phú Quý Đồng Nai chính thức, chuyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ tại Đồng Nai, đầu tư bạc tích trữ uy tín, an toàn. Hotline: 0973.067.036 - 0879.189.363 | Địa Chỉ: 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai",
     url: "https://kimphuquy.com",
     telephone: "+84973067036",
     address: {
@@ -354,7 +354,7 @@ export default function HomePage() {
     priceRange: "$$",
     image: "/cover fanpage nls phu quy 2.png",
     sameAs: ["https://facebook.com/kimphuquy", "https://zalo.me/kimphuquy"],
-    serviceType: "Mua bán trao đổi gia công bạc",
+    serviceType: "Mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ",
     areaServed: {
       "@type": "City",
       name: "Đồng Nai",
@@ -367,24 +367,24 @@ export default function HomePage() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Mua bán trao đổi bạc miếng",
-            description: "Dịch vụ mua bán trao đổi bạc miếng uy tín chất lượng",
+            name: "Mua bán phân phối bạc miếng",
+            description: "Dịch vụ mua bán phân phối bạc miếng uy tín chất lượng",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Gia công bạc thỏi",
-            description: "Dịch vụ gia công bạc thỏi chất lượng cao",
+            name: "Mua bán phân phối bạc thỏi",
+            description: "Dịch vụ mua bán phân phối bạc thỏi chất lượng cao",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Tích trữ bạc an toàn",
-            description: "Dịch vụ tích trữ bạc an toàn, bảo mật",
+            name: "Mua bán phân phối bạc mỹ nghệ",
+            description: "Dịch vụ mua bán phân phối bạc mỹ nghệ uy tín chất lượng",
           },
         },
       ],
@@ -401,14 +401,14 @@ export default function HomePage() {
       <div className="h-14 sm:h-16"></div>
 
       {/* Page H1 for SEO (visually hidden) */}
-      <h1 className="sr-only">Kim Phú Quý Đồng Nai - Mua bán trao đổi gia công bạc miếng, bạc thỏi</h1>
+      <h1 className="sr-only">Kim Phú Quý Đồng Nai - Mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ</h1>
 
       {/* Hero Section */}
       <HeroSection />
 
       {/* Order feature notice */}
       <div className="w-full bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-center py-2 px-4 text-sm font-medium">
-      Tính năng đặt hàng trên website chưa chính thức mở, vui lòng nhắn qua <a href="https://zalo.me/0763600889" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Zalo 0763 600 889</a> hoặc <a href="https://www.facebook.com/kimphuquy" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Fanpage</a> để được đặt hàng giá chính xác nhất.
+      Tính năng đặt hàng trên website chưa chính thức mở, vui lòng nhắn qua <a href="https://zalo.me/0973067036" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Zalo 0973 067 036</a> hoặc <a href="https://www.facebook.com/bacphuquydongnai" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Fanpage</a> để được đặt hàng giá chính xác nhất.
       </div>
 
       {/* Main Content */}
@@ -493,17 +493,17 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 dark:text-slate-200 mb-6 text-center">
-                Công Ty TNHH Kim Phú Quý - Chuyên Mua Bán Trao Đổi Bạc Uy Tín Tại Đồng Nai
+                Công Ty TNHH Kim Phú Quý - Chuyên Mua Bán Phân Phối Bạc Thỏi, Bạc Miếng, Bạc Mỹ Nghệ Uy Tín Tại Đồng Nai
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
-                    Kim Phú Quý - Uy Tín Chất Lượng
+                    Kim Phú Quý - Mua Bán Phân Phối Bạc Thỏi, Bạc Miếng, Bạc Mỹ Nghệ Uy Tín Chất Lượng
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">
-                    Là cửa hàng chuyên mua bán trao đổi <span className="font-semibold">bạc thỏi, bạc miếng</span> tại Đồng Nai, chúng tôi tự hào cung cấp những sản phẩm bạc chất lượng tốt nhất. 
-                    Bạc tại cửa hàng có độ tinh khiết 999, được gia công tinh xảo theo tiêu chuẩn quốc tế. Xem <a className="underline" href="/gia-bac-hom-nay">giá bạc hôm nay</a> để cập nhật.
+                    Là cửa hàng chuyên mua bán phân phối <span className="font-semibold">bạc thỏi, bạc miếng, bạc mỹ nghệ</span> tại Đồng Nai, chúng tôi tự hào cung cấp những sản phẩm bạc chất lượng tốt nhất. 
+                    Bạc tại cửa hàng có độ tinh khiết 999, được phân phối theo tiêu chuẩn quốc tế. Xem <a className="underline" href="/gia-bac-hom-nay">giá bạc hôm nay</a> để cập nhật.
                   </p>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">
                     <span className="font-semibold">Kim Phú Quý</span> là thương hiệu uy tín trong lĩnh vực mua bán bạc, và chúng tôi cam kết mang đến những sản phẩm chất lượng cao nhất cho khách hàng. Cần hỗ trợ? Ghé <a className="underline" href="/lien-he">liên hệ</a> ngay.
@@ -512,14 +512,14 @@ export default function HomePage() {
                 
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
-                    Dịch Vụ Mua Bán Trao Đổi Bạc Tại Đồng Nai
+                    Dịch Vụ Mua Bán Phân Phối Bạc Thỏi, Bạc Miếng, Bạc Mỹ Nghệ Tại Đồng Nai
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">
                     Với kinh nghiệm trong lĩnh vực mua bán bạc, Kim Phú Quý cung cấp dịch vụ tư vấn chuyên nghiệp. 
-                    Bạc miếng, bạc thỏi là lựa chọn lý tưởng cho việc đầu tư dài hạn. Xem <a className="underline" href="/chinh-sach/bao-hanh">chính sách bảo hành</a> và <a className="underline" href="/chinh-sach/bao-mat">bảo mật</a>.
+                    Bạc miếng, bạc thỏi, bạc mỹ nghệ là lựa chọn lý tưởng cho việc đầu tư dài hạn. Xem <a className="underline" href="/chinh-sach/bao-hanh">chính sách bảo hành</a> và <a className="underline" href="/chinh-sach/bao-mat">bảo mật</a>.
                   </p>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">
-                    Chúng tôi cũng cung cấp dịch vụ mua bán trao đổi gia công bạc tại Đồng Nai với giá cả cạnh tranh, minh bạch, đảm bảo quyền lợi tối đa cho khách hàng. Xem <a className="underline" href="/diem-ban">điểm bán</a> gần bạn.
+                    Chúng tôi cũng cung cấp dịch vụ mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ tại Đồng Nai với giá cả cạnh tranh, minh bạch, đảm bảo quyền lợi tối đa cho khách hàng. Xem <a className="underline" href="/diem-ban">điểm bán</a> gần bạn.
                   </p>
                 </div>
               </div>
@@ -543,7 +543,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 dark:text-green-400 mr-2 mt-1">✓</span>
-                    <span>Dịch vụ mua bán trao đổi gia công bạc chuyên nghiệp</span>
+                    <span>Dịch vụ mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ chuyên nghiệp</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 dark:text-green-400 mr-2 mt-1">✓</span>
@@ -557,7 +557,7 @@ export default function HomePage() {
                   <strong>Địa chỉ Kim Phú Quý Đồng Nai:</strong> 98/71, Tổ 39, Kp 4c, P. Trảng Dài, T. Đồng Nai
                 </p>
                 <p className="text-slate-600 dark:text-slate-400">
-                  <strong>Hotline:</strong> 0973.067.036 - 0879.189.363 - <strong>Email:</strong> kimphuquy@gmail.com
+                  <strong>Hotline:</strong> 0973.067.036 - 0879.189.363 {/* - <strong>Email:</strong> kimphuquy@gmail.com */}
                 </p>
               </div>
             </div>

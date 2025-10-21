@@ -27,7 +27,7 @@ export function CommonFooter() {
               </Link>
             </div>
             <p className="text-white text-xs sm:text-sm">
-              Chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng, bạc trang sức, mỹ nghệ với uy tín chất lượng.
+              Chuyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ với uy tín chất lượng.
             </p>
             <div className="mt-3 text-xs text-white">
               <p className="font-medium">CÔNG TY TNHH KIM PHÚ QUÝ</p>
@@ -149,10 +149,10 @@ export function CommonFooter() {
                 <Phone className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0 text-kpq-gold" />
                 <span className="text-white">0973.067.036 - 0879.189.363</span>
               </div>
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0 text-kpq-gold" />
                 <span className="text-white">kimphuquy@gmail.com</span>
-              </div>
+              </div> */}
               <div className="flex items-start space-x-2">
                 <Clock className="w-3 h-3 sm:w-4 sm:h-4 mt-0.5 flex-shrink-0 text-kpq-gold" />
                 <span className="text-white">8:00 - 18:30 (Thứ 2 - Thứ 7), 8:00 - 17:00 (Chủ Nhật)</span>

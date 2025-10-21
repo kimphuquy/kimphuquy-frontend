@@ -61,11 +61,11 @@ export default function BaoHanhPage() {
                 </div>
                 <div className="border-l-4 border-green-500 pl-4">
                   <h4 className="font-semibold text-gray-900 dark:text-white">Trang sức bạc</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Bảo hành 12 tháng về chất lượng gia công</p>
+                  <p className="text-gray-600 dark:text-gray-300">Bảo hành 12 tháng về chất lượng phân phối</p>
                 </div>
                 <div className="border-l-4 border-yellow-500 pl-4">
                   <h4 className="font-semibold text-gray-900 dark:text-white">Bạc thỏi, miếng</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Bảo hành vĩnh viễn về trọng lượng và độ tinh khiết</p>
+                  <p className="text-gray-600 dark:text-gray-300">Bảo hành vĩnh viễn về chất lượng phân phối</p>
                 </div>
               </CardContent>
             </Card>

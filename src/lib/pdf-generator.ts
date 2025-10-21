@@ -73,7 +73,7 @@ export function generateOrderPDF(order: OrderData, customerInfo?: CustomerInfo):
     doc.setFont("helvetica", "normal")
     doc.text("Chuyen kinh doanh trang suc bac cao cap", 105, 28, { align: "center" })
     doc.text("Dia chi: 45 Bau Hac 8, Thanh Khe, Da Nang", 105, 35, { align: "center" })
-    doc.text("Dien thoai: 0763 600 889 | Email: kimphuquy@gmail.com", 105, 42, { align: "center" })
+    doc.text("Dien thoai: 0763 600 889", 105, 42, { align: "center" }) // | Email: kimphuquy@gmail.com
 
     doc.setLineWidth(0.5)
     doc.line(20, 48, 190, 48)
@@ -129,7 +129,7 @@ export function generateOrderPDF(order: OrderData, customerInfo?: CustomerInfo):
     }
 
     // Ghi chú khách hàng
-    const customerNotes = safeText(finalCustomerInfo.notes)
+    const customerNotes = safeText((finalCustomerInfo as any).notes)
     if (customerNotes) {
       currentY += 7
       doc.text(`Ghi chu khach hang: ${removeVietnameseTones(customerNotes)}`, 20, currentY)

@@ -9,13 +9,13 @@ const faqData = [
     id: 1,
     question: "Kim Phú Quý Đồng Nai có phải đại lý chính thức của Phú Quý và Ancarat không?",
     answer:
-      "Có, Kim Phú Quý là đại lý chính thức của Phú Quý và Ancarat tại Đồng Nai, chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng với đầy đủ giấy chứng nhận và bảo hành từ thương hiệu Phú Quý và Ancarat.",
+      "Có, Kim Phú Quý là đại lý chính thức của Phú Quý và Ancarat tại Đồng Nai, chuyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ với đầy đủ giấy chứng nhận và bảo hành từ thương hiệu Phú Quý và Ancarat.",
   },
   {
     id: 2,
     question: "Bạc Phú Quý và Ancarat tại Kim Phú Quý có chất lượng như thế nào?",
     answer:
-      "Bạc Phú Quý và Ancarat tại cửa hàng Kim Phú Quý có độ tinh khiết 999, được gia công tinh xảo và có giấy chứng nhận chất lượng uy tín từ thương hiệu Phú Quý và Ancarat.",
+      "Bạc Phú Quý và Ancarat tại cửa hàng Kim Phú Quý có độ tinh khiết 999, được phân phối theo tiêu chuẩn quốc tế và có giấy chứng nhận chất lượng uy tín từ thương hiệu Phú Quý và Ancarat.",
   },
   {
     id: 3,

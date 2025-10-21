@@ -32,7 +32,7 @@ export const storeLocations: Store[] = [
     image:
       "/images/diem ban/dong nai/z6971613995851_1fd74c45410c3f2327c557285191fbd4.jpg",
     description:
-      "Cửa hàng chính của Kim Phú Quý tại Đồng Nai, chuyên mua bán trao đổi gia công bạc thỏi, bạc miếng, bạc trang sức, mỹ nghệ với uy tín chất lượng hàng đầu. Phục vụ khách hàng khu vực Đồng Nai và các tỉnh lân cận.",
+      "Kim Phú Quý Đồng Nai là cửa hàng chính của Kim Phú Quý tại Đồng Nai, chuyên mua bán phân phối bạc thỏi, bạc miếng, bạc mỹ nghệ với uy tín chất lượng hàng đầu. Phục vụ khách hàng khu vực Đồng Nai và các tỉnh lân cận.",
     features: [
       "Cửa hàng chính tại Trảng Dài, Đồng Nai",
       "Đội ngũ chuyên gia tư vấn giàu kinh nghiệm",

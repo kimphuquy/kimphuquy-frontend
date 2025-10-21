@@ -36,7 +36,7 @@ export function CartPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [couponCode, setCouponCode] = useState("")
 
-  const form = useForm<CustomerInfoFormType>({
+  const form = useForm({
     resolver: yupResolver(customerInfoSchema),
     mode: "onChange",
     defaultValues: {
@@ -45,15 +45,15 @@ export function CartPage() {
       phone: "",
       email: "",
       birthDate: "",
-      deliveryMethod: "delivery", // Default to home delivery
+      deliveryMethod: "delivery",
       province: "",
       district: "",
       ward: "",
       address: "",
       store: "",
-      paymentMethod: "bank", // Default to bank transfer
+      paymentMethod: "bank",
       note: "",
-      agreeTerms: true, // Default checked
+      agreeTerms: true,
       agreePromotion: false,
       agreeCompany: false,
     },
@@ -168,7 +168,11 @@ export function CartPage() {
       // Create order data
       const orderData: OrderData = {
         id: orderId,
-        items: orderItems,
+        items: orderItems.map(item => ({
+          ...item,
+          sellPrice: item.sellPrice.toString(),
+          buyPrice: item.buyPrice.toString(),
+        })),
         customerInfo: {
           fullName: data.name,
           phoneNumber: data.phone,
@@ -311,16 +315,16 @@ export function CartPage() {
                 />*/}
 
                 {/* Customer Information Form */}
-                <CustomerInfoForm form={form} />
+                <CustomerInfoForm form={form as any} />
 
                 {/* Combined Delivery Method & Address */}
-                <DeliveryMethod form={form} />
+                <DeliveryMethod form={form as any} />
 
                 {/* Payment Methods */}
-                <PaymentMethod form={form} />
+                <PaymentMethod form={form as any} />
 
                 {/* Order Notes */}
-                <OrderNotes form={form} />
+                <OrderNotes form={form as any} />
               </div>
 
               {/* Right Column - Order Summary */}

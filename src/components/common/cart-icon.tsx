@@ -13,7 +13,7 @@ export function CartIcon() {
   useEffect(() => {
     const updateCartCount = () => {
       const items = getCartItems()
-      setItemCount(getCartItemCount(items))
+      setItemCount(getCartItemCount())
     }
 
     updateCartCount()
