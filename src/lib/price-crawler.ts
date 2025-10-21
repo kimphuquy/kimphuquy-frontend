@@ -62,7 +62,12 @@ interface PriceUpdateResult {
 
 class PriceCrawler {
   private readonly baseUrl = "https://silver.phuquygroup.vn"
-  private readonly corsProxy = "https://api.allorigins.win/raw?url="
+  private readonly corsProxies = [
+    "https://api.allorigins.win/raw?url=",
+    "https://cors-anywhere.herokuapp.com/",
+    "https://api.codetabs.com/v1/proxy?quest=",
+    "https://thingproxy.freeboard.io/fetch/"
+  ]
   private isUpdating = false
   private lastCheckTime = 0
   private readonly CHECK_COOLDOWN = 1 * 60 * 1000 // 1 minute cooldown between checks
@@ -98,17 +103,56 @@ class PriceCrawler {
   }
 
   // Fetch HTML content with CORS proxy
-  private async fetchWithProxy(url: string): Promise<string> {
-    try {
-      const response = await fetch(`${this.corsProxy}${encodeURIComponent(url)}`)
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+  private async fetchWithProxy(url: string, retries: number = 3): Promise<string> {
+    for (let proxyIndex = 0; proxyIndex < this.corsProxies.length; proxyIndex++) {
+      const proxy = this.corsProxies[proxyIndex]
+      
+      for (let attempt = 1; attempt <= retries; attempt++) {
+        try {
+          console.log(`Proxy ${proxyIndex + 1}/${this.corsProxies.length}, Attempt ${attempt}/${retries} to fetch: ${url}`)
+          
+          // Create AbortController for timeout
+          const controller = new AbortController()
+          const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
+          
+          const proxyUrl = proxy === "https://cors-anywhere.herokuapp.com/" 
+            ? `${proxy}${url}` 
+            : `${proxy}${encodeURIComponent(url)}`
+          
+          const response = await fetch(proxyUrl, {
+            signal: controller.signal,
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+          })
+          
+          clearTimeout(timeoutId)
+          
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+          }
+          
+          const text = await response.text()
+          console.log(`Successfully fetched ${text.length} characters using proxy ${proxyIndex + 1}`)
+          return text
+          
+        } catch (error) {
+          console.error(`Proxy ${proxyIndex + 1}, Attempt ${attempt} failed:`, error)
+          
+          if (attempt === retries) {
+            console.log(`Proxy ${proxyIndex + 1} exhausted all attempts, trying next proxy...`)
+            break // Try next proxy
+          }
+          
+          // Wait before retry (exponential backoff)
+          const delay = Math.min(1000 * Math.pow(2, attempt - 1), 5000)
+          console.log(`Waiting ${delay}ms before retry...`)
+          await new Promise(resolve => setTimeout(resolve, delay))
+        }
       }
-      return await response.text()
-    } catch (error) {
-      console.error("Fetch error:", error)
-      throw error
     }
+    
+    throw new Error(`Failed to fetch after trying all ${this.corsProxies.length} proxies with ${retries} attempts each`)
   }
 
   // Parse HTML and extract product data based on the actual structure
@@ -285,7 +329,19 @@ class PriceCrawler {
     }
 
     try {
-      const crawledProducts = await this.crawlProducts()
+      let crawledProducts: CrawledProduct[] = []
+      
+      try {
+        crawledProducts = await this.crawlProducts()
+      } catch (crawlError) {
+        console.error("Crawl failed, using fallback mechanism:", crawlError)
+        result.errors.push(`Không thể crawl dữ liệu: ${crawlError}. Sử dụng dữ liệu local.`)
+        
+        // Fallback: Return success with no updates but don't fail completely
+        result.success = true
+        result.errors.push("Sử dụng dữ liệu giá hiện tại do không thể kết nối đến server")
+        return result
+      }
 
       if (crawledProducts.length === 0) {
         result.errors.push("Không tìm thấy sản phẩm nào từ website nguồn")
