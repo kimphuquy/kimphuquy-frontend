@@ -15,6 +15,11 @@ export function ApiStatus({ onRetry }: ApiStatusProps) {
   const [isChecking, setIsChecking] = useState(false)
   const [lastCheck, setLastCheck] = useState<Date | null>(null)
 
+  // Only show in development environment
+  if (process.env.NODE_ENV !== 'development') {
+    return null
+  }
+
   const checkConnection = async () => {
     setIsChecking(true)
     try {
