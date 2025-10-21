@@ -13,6 +13,7 @@ import { ProductGrid } from "@/components/home/product-grid"
 import { Pagination } from "@/components/home/pagination"
 import { FAQSection } from "@/components/home/faq-section"
 import { PriceUpdateIndicator } from "@/components/common/price-update-indicator"
+import { PriceCrawlerTest } from "@/components/common/price-crawler-test"
 import {
   refreshProductsFromStorage,
   getAllBrands,
@@ -564,6 +565,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Price Crawler Test - Development Only */}
+      {process.env.NODE_ENV === 'development' && (
+        <section className="py-16 bg-gray-50 dark:bg-gray-900">
+          <div className="container mx-auto px-4">
+            <PriceCrawlerTest />
+          </div>
+        </section>
+      )}
 
       {/* FAQ Section */}
       <FAQSection />
