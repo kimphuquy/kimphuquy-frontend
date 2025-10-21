@@ -18,7 +18,7 @@ export function FloatingContact() {
         <div className="flex flex-col gap-2 sm:gap-3 mb-3 sm:mb-4 animate-in slide-in-from-bottom-2 duration-300">
           {/* Zalo Contact */}
           <a
-            href="https://zalo.me/your-zalo-oa-id"
+            href="https://zalo.me/0973067036"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative"
@@ -36,7 +36,7 @@ export function FloatingContact() {
 
           {/* Messenger Contact */}
           <a
-            href="https://m.me/your-facebook-page-id"
+            href="https://m.me/bacphuquydongnai"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative"
@@ -51,7 +51,7 @@ export function FloatingContact() {
           </a>
 
           {/* Phone Call Contact */}
-          <a href="tel:+84123456789" className="group relative">
+          <a href="tel:0973067036" className="group relative">
             <div className="w-12 h-12 sm:w-14 sm:h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
               <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>

@@ -201,7 +201,7 @@ ${orderSummary}
 
 Ngày đặt: ${new Date(order.createdAt).toLocaleString("vi-VN")}`
 
-    const zaloUrl = `https://zalo.me/0763600889?text=${encodeURIComponent(message)}`
+    const zaloUrl = `https://zalo.me/0973067036?text=${encodeURIComponent(message)}`
     window.open(zaloUrl, "_blank")
   }
 
@@ -228,7 +228,7 @@ ${orderSummary}
 
 Ngày đặt: ${new Date(order.createdAt).toLocaleString("vi-VN")}`
 
-    const facebookUrl = `https://m.me/kimphuquy?text=${encodeURIComponent(message)}`
+    const facebookUrl = `https://m.me/bacphuquydongnai?text=${encodeURIComponent(message)}`
     window.open(facebookUrl, "_blank")
   }
 
